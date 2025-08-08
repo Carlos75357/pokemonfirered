@@ -23,6 +23,11 @@
       "map": "MAP_ROUTE21_NORTH",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE26",
+      "offset": 10,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -93,6 +98,27 @@
       "elevation": 0,
       "dest_map": "MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -164,6 +190,16 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PalletTown_EventScript_TrainerTips"
+    },
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "item": "ITEM_TINY_MUSHROOM",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
     }
   ]
 }

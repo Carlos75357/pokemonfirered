@@ -2536,11 +2536,29 @@ static void PokeSum_PrintMoveName(u8 i)
     u16 move = sMonSummaryScreen->moveIds[i];
     u8 ppBonuses = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_PP_BONUSES);
     u8 maxPP = CalculatePPWithBonus(move, ppBonuses, i);
+    const u8 *categoryText = gExpandedPlaceholder_Empty;
 
     if (i == 4)
         curPP = maxPP;
 
+    // Display move category indicator
+    if (move != MOVE_NONE)
+    {
+        if (IS_MOVE_PHYSICAL(move))
+            categoryText = gText_MoveCategory_Physical;
+        else if (IS_MOVE_SPECIAL(move))
+            categoryText = gText_MoveCategory_Special;
+        else if (IS_MOVE_STATUS(move))
+            categoryText = gText_MoveCategory_Status;
+    }
+
     AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 3, GetMoveNamePrinterYpos(i), sPrintMoveTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.moveNameStrBufs[i]);
+    
+    // Print category indicator after move name
+    if (move != MOVE_NONE)
+    {
+        AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 90, GetMoveNamePrinterYpos(i), sPrintMoveTextColors[0], TEXT_SKIP_DRAW, categoryText);
+    }
 
     if (sMonSummaryScreen->moveIds[i] == 0 || (curPP == maxPP))
       colorIdx = 0;
@@ -2868,6 +2886,34 @@ static void PokeSum_PrintSelectedMoveStats(void)
                                      57, 15,
                                      sLevelNickTextColors[0], TEXT_SKIP_DRAW,
                                      sMonSummaryScreen->summary.moveAccuracyStrBufs[sMoveSelectionCursorPos]);
+
+        // Display move category
+        {
+            u16 move = sMonSummaryScreen->moveIds[sMoveSelectionCursorPos];
+            const u8 *categoryText = gExpandedPlaceholder_Empty;
+            
+            if (move != MOVE_NONE)
+            {
+                if (IS_MOVE_PHYSICAL(move))
+                    categoryText = gText_MoveCategory_Physical;
+                else if (IS_MOVE_SPECIAL(move))
+                    categoryText = gText_MoveCategory_Special;
+                else if (IS_MOVE_STATUS(move))
+                    categoryText = gText_MoveCategory_Status;
+            }
+            
+            // Print category label
+            AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_TRAINER_MEMO], FONT_NORMAL,
+                                         7, 28,
+                                         sLevelNickTextColors[0], TEXT_SKIP_DRAW,
+                                         gText_MoveCategory_Label);
+            
+            // Print category value
+            AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_TRAINER_MEMO], FONT_NORMAL,
+                                         57, 28,
+                                         sLevelNickTextColors[0], TEXT_SKIP_DRAW,
+                                         categoryText);
+        }
 
         AddTextPrinterParameterized4(sMonSummaryScreen->windowIds[POKESUM_WIN_TRAINER_MEMO], FONT_NORMAL,
                                      7, 42,

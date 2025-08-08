@@ -1295,6 +1295,12 @@ const u8 gText_WonderNewsReceived[] = _("A new WONDER NEWS item has been\nreceiv
 const u8 gText_NewStampReceived[] = _("A new STAMP has been received.");
 const u8 gText_NewTrainerReceived[] = _("A new TRAINER has arrived.");
 const u8 gText_AlreadyHadCard[] = _("You already had that\nWONDER CARD.");
+
+// Move category indicators
+const u8 gText_MoveCategory_Physical[] = _("FÍS");
+const u8 gText_MoveCategory_Special[] = _("ESP");
+const u8 gText_MoveCategory_Status[] = _("EST");
+const u8 gText_MoveCategory_Label[] = _("TIPO");
 const u8 gText_AlreadyHadNews[] = _("You already had that\nWONDER NEWS item.");
 const u8 gText_AlreadyHadStamp[] = _("You already had that\nSTAMP.");
 const u8 gText_NoMoreRoomForStamps[] = _("There's no more room for adding\nSTAMPS.");

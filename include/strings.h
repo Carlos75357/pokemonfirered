@@ -1545,4 +1545,10 @@ extern const u8 gText_PokeSum_EggOrigin_NicePlace[];
 extern const u8 gText_PokeSum_EggOrigin_Spa[];
 extern const u8 gText_PokeSum_EggOrigin_Trade[];
 
+// Move category indicators
+extern const u8 gText_MoveCategory_Physical[];
+extern const u8 gText_MoveCategory_Special[];
+extern const u8 gText_MoveCategory_Status[];
+extern const u8 gText_MoveCategory_Label[];
+
 #endif //GUARD_STRINGS_H
