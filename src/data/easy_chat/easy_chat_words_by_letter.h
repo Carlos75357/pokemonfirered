@@ -615,6 +615,7 @@ static const u16 sEasyChatWordsByLetter_G[] = {
     EC_WORD_GOOD,
     EC_WORD_GOOD_BYE,
     EC_POKEMON2(GOREBYSS),
+    EC_POKEMON(GOSHSLASH),
     EC_WORD_GOT,
     EC_WORD_GOTCHA,
     EC_WORD_GOURMET,

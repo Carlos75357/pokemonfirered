@@ -2709,3 +2709,10 @@ const u8 gDeoxysPokedexText[] = _(
     "cellular structure.");
 
 const u8 gDeoxysPokedexTextUnused[] = _("");
+
+const u8 gGoshslashPokedexText[] = _(
+    "A ghostly warrior that once hunted\n"
+    "DRAGON-type POKéMON. It now wanders\n"
+    "eternally searching for its ancient prey.");
+
+const u8 gGoshslashPokedexTextUnused[] = _("");

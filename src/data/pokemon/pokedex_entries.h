@@ -5030,4 +5030,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 337,
         .trainerOffset = 2,
     },
+    [NATIONAL_DEX_GOSHSLASH] =
+    {
+        .categoryName = _("GOLEM"),
+        .height = 22,
+        .weight = 200,
+        .description = gGoshslashPokedexText,
+        .unusedDescription = gGoshslashPokedexTextUnused,
+        .pokemonScale = 293,
+        .pokemonOffset = 0,
+        .trainerScale = 337,
+        .trainerOffset = 2,
+    },
 };

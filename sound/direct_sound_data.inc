@@ -1855,6 +1855,10 @@ Cry_Deoxys::
 Cry_Chimecho::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
 
+	.align 2
+Cry_Goshslash::
+	.incbin "sound/direct_sound_samples/cries/goshslash.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

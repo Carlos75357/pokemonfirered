@@ -9385,4 +9385,21 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
+    [SPECIES_GOSHSLASH]    = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+                                        | TMHM(TM08_BULK_UP)
+                                        | TMHM(TM10_HIDDEN_POWER)
+                                        | TMHM(TM12_TAUNT)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM20_SAFEGUARD)
+                                        | TMHM(TM21_FRUSTRATION)
+                                        | TMHM(TM26_EARTHQUAKE)
+                                        | TMHM(TM30_SHADOW_BALL)
+                                        | TMHM(TM32_DOUBLE_TEAM)
+                                        | TMHM(TM33_REFLECT)
+                                        | TMHM(TM44_REST)
+                                        | TMHM(HM01_CUT)
+                                        | TMHM(HM04_STRENGTH)
+                                        | TMHM(HM06_ROCK_SMASH)
+                                        | TMHM(HM07_WATERFALL)),
+
 };

@@ -1,0 +1,6 @@
+- Crear habilidad para goshslash que le haga mas fuerte contra los pokemon dragon, ya sea que resista mas, pegue mas o cualquier
+cosa que se me ocurra
+- Movimiento que sea para matar dragones, por defecto de tipo normal, aunque en el ataque hara poco eficaz a todos los pokemon que
+no sean de tipo dragon.
+- Crear movimientos con las espada y con el escudo para este pokemon.
+- 

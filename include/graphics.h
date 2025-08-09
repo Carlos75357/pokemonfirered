@@ -2346,6 +2346,12 @@ extern const u32 gMonBackPic_Chimecho[];
 extern const u32 gMonShinyPalette_Chimecho[];
 extern const u8 gMonIcon_Chimecho[];
 extern const u8 gMonFootprint_Chimecho[];
+extern const u32 gMonFrontPic_Goshslash[];
+extern const u32 gMonPalette_Goshslash[];
+extern const u32 gMonBackPic_Goshslash[];
+extern const u32 gMonShinyPalette_Goshslash[];
+extern const u8 gMonIcon_Goshslash[];
+extern const u8 gMonFootprint_Goshslash[];
 extern const u32 gMonFrontPic_Egg[];
 extern const u32 gMonPalette_Egg[];
 extern const u8 gMonIcon_Egg[];
@@ -2748,6 +2754,10 @@ extern const u32 gTrainerPalette_Painter[];
 extern const u8 gMenuInfoElements_Gfx[];
 extern const u16 gMenuInfoElements1_Pal[];
 extern const u16 gMenuInfoElements2_Pal[];
+
+// Money graphics
+extern const u8 gMenuMoneyGfx[];
+extern const u16 gMenuMoneyPal[];
 
 extern const u32 gItemIcon_QuestionMark[];
 extern const u32 gItemIconPalette_QuestionMark[];

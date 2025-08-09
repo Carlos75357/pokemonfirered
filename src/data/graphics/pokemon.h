@@ -2721,6 +2721,14 @@ const u32 gMonShinyPalette_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/sh
 const u8 gMonIcon_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
 const u8 gMonFootprint_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/footprint.1bpp");
 
+// Añadido por mi
+const u32 gMonFrontPic_Goshslash[] = INCBIN_U32("graphics/pokemon/goshslash/front.4bpp.lz");
+const u32 gMonPalette_Goshslash[] = INCBIN_U32("graphics/pokemon/goshslash/normal.gbapal.lz");
+const u32 gMonBackPic_Goshslash[] = INCBIN_U32("graphics/pokemon/goshslash/back.4bpp.lz");
+const u32 gMonShinyPalette_Goshslash[] = INCBIN_U32("graphics/pokemon/goshslash/shiny.gbapal.lz");
+const u8 gMonIcon_Goshslash[] = INCBIN_U8("graphics/pokemon/goshslash/icon.4bpp");
+const u8 gMonFootprint_Goshslash[] = INCBIN_U8("graphics/pokemon/goshslash/footprint.1bpp");
+
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 
@@ -2831,3 +2839,4 @@ const u8 gMonIcon_UnownExclamationMark[] = INCBIN_U8("graphics/pokemon/unown/exc
 const u32 gMonFrontPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/front.4bpp.lz");
 const u32 gMonBackPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/back.4bpp.lz");
 const u8 gMonIcon_UnownQuestionMark[] = INCBIN_U8("graphics/pokemon/unown/question_mark/icon.4bpp");
+
